@@ -12,7 +12,7 @@ const ecs = new ECS();
 
 const playerEntity = new Entity().attachComponent(
     SpriteComponent,
-    new SpriteComponent("../public/zwierz.gif", {
+    new SpriteComponent("zwierz.gif", {
         frames: 5,
         xFrame: 6,
         yFrame: 4,
@@ -28,7 +28,7 @@ const playerEntity = new Entity().attachComponent(
 
 ecs.addEntity(playerEntity);
 
-const world = new World(ecs, canvas, "../public/Forest_Retreat.webp");
+const world = new World(ecs, canvas, "Forest_Retreat.webp");
 ecs.addSystem(new SpriteRendererSystem(world.ctx));
 
 world.start();
