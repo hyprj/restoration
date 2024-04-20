@@ -1,0 +1,17 @@
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+}
+
+#app,
+.container-app {
+    min-height: 100vh;
+    background-color: rgb(94, 48, 94);
+}
+
+.container-app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
